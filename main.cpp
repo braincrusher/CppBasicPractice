@@ -9,5 +9,23 @@ int main(void)
 
     //sqrt();
 
-    ourfunc();
+    //ourfunc();
+
+    //convert();
+    //
+    name_addr();
+
+    trans();
+
+    imp();
+
+    ageTrans();
+
+    batman();
+
+    ironman();
+
+    zergling();
+
+    return 0;
 }

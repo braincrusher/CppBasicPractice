@@ -75,4 +75,113 @@ void simon(int n)
 }
 //2.6
 void convert(void)
-{}
+{
+    using namespace std;
+    int stone;
+    cout << "Enter the weight in stone: ";
+    cin >> stone;
+    int pounds = stonetolb(stone);
+    cout << stone << " stone = ";
+    cout << pounds << " pounds." << endl;
+    return;
+}
+
+int stonetolb(int sts)
+{
+    return 14*sts;
+}
+//2.7.1
+void name_addr(void)
+{
+    using namespace std;
+    cout << "My name is DoubleCheeseburger, My address is Mars" << endl;
+}
+//2.7.2
+void trans(void)
+{
+    using namespace std;
+    cout << "Enter the long: ";
+    int l_long = 0;
+    cin >> l_long;
+    cout << "It's " << l_long * 220 << " yard." << endl;
+}
+//2.7.3
+void imp(void)
+{
+    child1();
+    child1();
+    child2();
+    child2();
+}
+void child1()
+{
+    using namespace std;
+    cout << "Three blind mice" << endl;
+}
+void child2()
+{
+    using namespace std;
+    cout << "See how they run" << endl;
+}
+//2.7.4
+void ageTrans(void)
+{
+    using namespace std;
+    cout << "Enter your age: ";
+    int agey = 0;
+    cin >> agey;
+    cout << "There's " << agey * 12 << " month in your age" << endl;
+}
+//2.7.5
+void batman(void)
+{
+    using namespace std;
+    cout << "Please enter a Celsius value: ";
+    float cel = 0.0;
+    cin >> cel;
+    cout << cel
+         << "degrees Celsius is "
+         << superman(cel) 
+         << " degrees Fahrenheit."
+         << endl;
+}
+float superman(float n)
+{
+    return 1.8 * n + 32.0;
+}
+//2.7.6
+void ironman(void)
+{
+    using namespace std;
+    cout << "Enter the number of light years: ";
+    double ly = 0.0;
+    cin >> ly;
+    cout << ly
+         << " light years = "
+         << thor(ly)
+         << " astronomical units."
+         << endl;
+}
+double thor (double n)
+{
+    return 63240.0 * n;
+}
+//2.7.7
+void zergling(void)
+{
+    using namespace std;
+    cout << "Enter the number of hours: ";
+    int hours = 0;
+    cin >> hours;
+    cout << "Enter the number of minutes: ";
+    int minutes = 0;
+    cin >> minutes;
+    
+    hydralisk(hours, minutes);
+}
+void hydralisk(int hours, int minutes)
+{
+    using std::cout;
+    using std::endl;
+    cout << "Time: " << hours << ":" << minutes << endl;
+}
