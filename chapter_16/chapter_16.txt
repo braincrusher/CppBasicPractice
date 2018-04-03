@@ -1,0 +1,7 @@
+
+
+
+stl
+component:@container @iterator @functionObject @algrorithm Templeate
+@container: include a distributor to assign the memory allocation scheme.
+		default choice is allocator<T>
