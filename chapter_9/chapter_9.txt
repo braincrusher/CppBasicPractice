@@ -1,0 +1,48 @@
+9.1 Memory modol and name space
+
+@warning:dont put head file into the project, or include any source file.
+@multi Libs compile: obj (binary block)file may be different (name mod) from others. Use same compile to fix this.
+
+storage measure:£¨Memory Persistence)
+1.auto:be created when the code block begin to execute. be released when the execute finish.
+2.static: exist all the time.
+3.thread:life cycle is the same as the thread which it belong to.
+4.dynamic:so called free store or heap.alloc by new and release by delete.
+
+Action scope: var can't be used in other block
+linkage:var can't share with other block.(no, interior--one file, extern--share between files)
+
+9.2.2 auto memory persistence
+
+define in the function:
+scope:local (declare to the end of code block)(memory will alloc when the code block begin)
+linkage:no
+
+define in the code block:
+scople: from the beginnign to the end.
+and if two var have same name.interior var will make the extern var invisible.
+
+//pro list
+
+summarize:
+can't share between function
+in function, new define in new block will cover the old one.
+
+1.Initialize of auto var:
+int w;
+int x=5;
+
+2.auto var and stack
+*?* is this stack same as windows os' stack?
+
+
+3.register var: just declare this var is auto.
+
+9.2.3 static memory persistence
+linkage:
+@extern:declare outside the code block
+@internal:declare with static outside the code block
+@No:declare with static inside the code block
+
+
+@exist all the time.@storage in fixed area.@default value is zero.
