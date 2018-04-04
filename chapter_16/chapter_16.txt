@@ -1,7 +1,23 @@
-
-
+/*--------------------------------------------
+  This file is a learning record
+      (c)Written by DoubleCheese Burger, 2018
+--------------------------------------------*/
 
 stl
 component:@container @iterator @functionObject @algrorithm Templeate
-@container: include a distributor to assign the memory allocation scheme.
+##container: include a distributor to assign the memory allocation scheme.
 		default choice is allocator<T>
+
+-----------Operation on vector-----------------
+@size().//return the number of the elements.
+@swap().//swap the content between two containeer.
+@begin().//return a iterator which direct to the first element in vector.
+@end().//like begin() but direct to the last element of the last element.
+
+##iterator:A generalized pointer.(to provide uniform interface.)
+--scope: whole class
+
+@push_back().//push a element to the end of vector.
+@erase().//delete the elements which are in the specific range[p1, p2)
+@insert().//contrary to erase()(param1:insert location.)[p2, p3)a range.
+
